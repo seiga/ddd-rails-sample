@@ -28,7 +28,7 @@ order.save(order)
 
 order = Domain::Order::Order.new(customer: 'Bob')
 order.add_product(product2, 2)
-order_repository.save(order)
+order.save(order)
 
 order = Domain::Order::Order.new(customer: 'Alice')
 order.add_product(product2, 10)
